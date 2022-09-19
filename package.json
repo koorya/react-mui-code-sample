@@ -1,0 +1,50 @@
+{
+  "name": "statusplace-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "vite --host",
+    "build-dev": "tsc && vite build --base=/statusplace/",
+    "build-local": "tsc && vite build",
+    "build-prod": "tsc && vite build",
+    "swagger": "rm -rf ./src/store/api/__generated__ &&  node ./scripts/swagger/generate.js"
+  },
+  "dependencies": {
+    "@editorjs/embed": "^2.5.1",
+    "@editorjs/header": "^2.6.2",
+    "@editorjs/image": "^2.6.2",
+    "@editorjs/list": "^1.7.0",
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.5.1",
+    "@mui/material": "^5.5.2",
+    "@mui/x-date-pickers": "^5.0.0-beta.0",
+    "@types/moment": "^2.13.0",
+    "editorjs-react-renderer": "^3.1.1",
+    "express": "^4.17.3",
+    "lodash": "^4.17.21",
+    "mobx": "^6.5.0",
+    "mobx-react-lite": "^3.3.0",
+    "moment": "^2.29.4",
+    "prettier": "^2.6.0",
+    "react": "^17.0.2",
+    "react-avatar-editor": "^13.0.0",
+    "react-dom": "^17.0.2",
+    "react-editor-js": "^2.0.6",
+    "react-responsive": "^9.0.0-beta.10",
+    "react-router-dom": "^6.3.0",
+    "tsconfig-paths": "^3.14.0",
+    "vite-tsconfig-paths": "^3.4.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.180",
+    "@types/node": "^17.0.21",
+    "@types/react": "^17.0.33",
+    "@types/react-avatar-editor": "^12.0.0",
+    "@types/react-dom": "^17.0.10",
+    "@vitejs/plugin-react": "^1.0.7",
+    "swagger-typescript-api": "^9.3.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0"
+  }
+}
